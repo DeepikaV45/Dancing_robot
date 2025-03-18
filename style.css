@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+body{
+    margin: 0;
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.head, .left-arm, .toso, .right-arm, .left-leg, .right-leg{
+    background-color: aquamarine;
+}
+.head{
+    height: 150px;
+    width: 200px;
+    border-radius: 150px 150px 0 0;
+}
+.eyes{
+    position: relative;
+    top: 80px;
+}
+.left-eye,.right-eye{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+}
+.left-eye{
+    margin-right: 20px;
+}
+.right-eye{
+    margin-left: 30px;
+}
+.upper-body{
+    width: 600px;
+    height: 150px;
+    display: flex;
+    margin-left: 300px;
+}
+.toso{
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 50px 50px;
+}
+/* .left-arm,.right-arm{
+    width: 40px;
+    height: 12px;
+    border-radius: 10px;
+}
+.left-arm{
+    margin-right: 50px;
+}
+.right-arm{
+    margin-left: 50px;
+} */
+.left-arm, .right-arm
+{
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.left-arm
+{
+    margin-right: 10px;
+}
+
+.right-arm{
+    margin-left: 10px;
+}
+.lower-body{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.left-leg,.right-leg{
+    width: 40px;
+    height: 150px;
+    border-radius: 0 0 100px 100px;
+    display: inline-block;
+}
+.left-leg{
+    margin-left: 10px;
+}
+.right-leg{
+    margin-left: 30px;
+}
+.robot:hover .head{
+    animation: movehead 2s infinite;
+}
+@keyframes movehead{
+    0%{
+       transform: rotateX(0deg);
+        
+    }
+    25%{
+        transform: rotateX(30deg);
+    }
+    50%{
+        transform: rotateX(0deg);
+       
+    }
+    100%{
+        transform: rotateX(30deg);
+        
+    }
+    
+}
+.robot:hover .left-arm{
+    animation:moveleftarm 2s infinite;
+}
+@keyframes moveleftarm{
+    0%{
+        transform:rotate(0deg);
+        transform-origin:top center;
+    }
+    25%{
+        transform:rotate(30deg);
+        transform-origin:top center;
+    }
+    50%{
+        transform:rotate(0deg);
+        transform-origin:top center;
+    }
+    100%{
+        transform:rotate(-30deg);
+        transform-origin:top center;
+    }
+}
+.robot:hover .right-arm{
+    animation:moverightarm 2s infinite;
+}
+@keyframes moverightarm{
+    0%{
+        transform:rotate(0deg);
+        transform-origin:top center;
+    }
+    25%{
+        transform:rotate(30deg);
+        transform-origin:top center;
+    }
+    50%{
+        transform:rotate(0deg);
+        transform-origin:top center;
+    }
+    100%{
+        transform:rotate(-30deg);
+        transform-origin:top center;
+    }
+}
+/* .robot:hover .right-leg{
+    animation:moverightleg 2s infinite;
+}
+@keyframes moverightleg{
+    0%{
+        transform:rotate(0deg);
+        transform-origin:top center;
+    }
+    25%{
+        transform:rotate(30deg);
+        transform-origin:top center;
+    }
+    50%{
+        transform:rotate(0deg);
+        transform-origin:top center;
+    }
+    100%{
+        transform:rotate(-30deg);
+        transform-origin:top center;
+    }
+} */
+/* .robot:hover .left-leg{
+    animation:moveleftleg 2s infinite;
+}
+@keyframes moveleftleg{
+    0%{
+        transform:rotate(0deg);
+        transform-origin:top center;
+    }
+    25%{
+        transform:rotate(30deg);
+        transform-origin:top center;
+    }
+    50%{
+        transform:rotate(0deg);
+        transform-origin:top center;
+    }
+    100%{
+        transform:rotate(-30deg);
+        transform-origin:top center;
+    }
+} */
+.robot:hover .toso{
+    animation:movetoso 2s infinite;
+
+}@keyframes movetoso{
+    0%{
+        transform:rotate(0deg);
+        
+    }
+    25%{
+        transform:rotate(30deg);
+    }
+    50%{
+        transform:rotate(0deg);
+       
+    }
+    100%{
+        transform:rotate(-30deg);
+        
+    }
+}
